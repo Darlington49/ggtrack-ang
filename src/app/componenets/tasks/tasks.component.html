@@ -1,0 +1,6 @@
+
+
+<p>tasks works!</p>
+<li *ngFor="let task of tasks; index as i; first as isFirst">
+    {{i}}/{{tasks.length}}. {{task.text}} <span *ngIf="isFirst">default</span>
+</li>
